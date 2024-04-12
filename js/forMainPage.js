@@ -3,11 +3,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const parent = document.querySelector('.description1');
 
     xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","cd_catalog.xml",true);
+    xmlhttp.open("GET","cd_catalog.xml",false);
     xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
+    const xmlDoc = xmlhttp.responseXML;
 
-    console.dir(xmlhttp.responseXML);
+    console.dir(xmlDoc.getElementsByTagName("title"));
     document.querySelector('.description1').innerHTML = `
     <img src="photo/Египет.webp">
         <div class="txt">

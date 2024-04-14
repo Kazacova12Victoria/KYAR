@@ -1,12 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-
-    const parent = document.querySelector('.description1');
-
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","js/cd_catalog.xml",false);
-    xmlhttp.send();
-    const xmlDoc = xmlhttp.responseXML;
-
     fetch('js/cd_catalog.xml')
         .then(function (response) {
             return response.text();
@@ -33,6 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
                 `;
             });
-        })
-
+        });
+        
 });

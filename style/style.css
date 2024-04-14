@@ -5,6 +5,7 @@
   transition: all 0.5s;
   font-family:  sans-serif;
   box-sizing: border-box;
+  
 }
 /*index-container
    ogon-agency
@@ -22,7 +23,7 @@ html {
   .toggler {
   display: none;
 }
-  
+
   p {
     font-style: inherit;
   }
@@ -31,7 +32,7 @@ html {
     background-color: #81C0E3;
   }
   
- 
+
   
   .menu-wrap {
     display: flex;

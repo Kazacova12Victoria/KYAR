@@ -16,6 +16,11 @@
    
 
   }
+  .description1 .descr__container{
+    display: flex;
+    justify-content: space-between;
+  }
+    
   .description1 img, .description1 .txt {
     grid-column: 5 span;
   }

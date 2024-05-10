@@ -5,7 +5,7 @@
     <title>Египет</title>
     <description>Исследуйте древний мир Египта за один день! Вас ждут удивительные встречи с сфинксом, прогулка по древней крепости, открытие сокровищ Тутанхамона, увлекательные истории о пирамидах . Проведите незабываемый день в самом большом городе Египта, полный загадок и удивительных открытий.</description>
     <link>
-        <linkhref>page5.html</linkhref>
+        <linkhref>egypt.html</linkhref>
     </link>
     <price>$1424</price>
 <text>
@@ -16,7 +16,7 @@
                  каждой достопримечательности и проведет вас сквозь века культуры и истории этой удивительной страны.
     </description>
     <link>
-        <linkhref>page6.html</linkhref>
+        <linkhref>italy.html</linkhref>
     </link>
     <price>$2300</price>
 <text>
@@ -26,8 +26,9 @@
                 достопримечательности города. Насладитесь прекрасными видами Дворца Топкапы, собора Святой Софии и Церкви Чародеицы. Путешествие
                  пронесет вас через величественные мосты и живописные набережные, погрузив в магию истории и красоты Стамбула.</description>
     <link>
-        <linkhref>page7.html</linkhref>
+        <linkhref>turkey.html</linkhref>
     </link>
+
 <text>
 <imagine>photo/Дубай.jpg</imagine>
     <title>Дубай</title>
@@ -36,7 +37,7 @@
                  и безупречно продуманный маршрут. Отправляйтесь в незабываемое приключение с нами и погрузитесь в волшебный мир этого великолепного
                  города, познав его секреты и наслаждаясь его многогранностью.</description>
     <link>
-        <linkhref>page8.html</linkhref>
+        <linkhref>dubai.html</linkhref>
     </link>
     <price>$3451</price>
 <text>
@@ -50,7 +51,7 @@
                 удивительных пляжей и кристально чистых водопадов. Познайте тайны древних культур и насладитесь 
                 многообразием этой удивительной страны, исследуя ее уникальные ароматы, вкусы и красоту природы.</description>
     <link>
-        <linkhref>page10.html</linkhref>
+        <linkhref>thailand.html</linkhref>
     </link>
     <price>$1650</price>
 <text>
@@ -62,7 +63,7 @@
                  уникальными винами. Откройте для себя богатство культуры и гостеприимства Грузии, исследуя ее 
                  знаменитые достопримечательности и встречаясь с ее дружелюбным народом.</description>
     <link>
-        <linkhref>page9.html</linkhref>
+        <linkhref>georgia.html</linkhref>
     </link>
     <price>$1562</price>
 <text>
@@ -75,7 +76,7 @@
                        где каждый камень хранит в себе тысячелетнюю историю, и окунитесь в атмосферу гостеприимства и 
                        теплоты греческого народа, который всегда рад приветствовать гостей в своей земле.</description>
     <link>
-        <linkhref>page11.html</linkhref>
+        <linkhref>greece.html</linkhref>
     </link>
     <price>$1988</price>
 <text>
@@ -88,7 +89,7 @@
                     тайны испанской кухни, наслаждаясь тапасами и сангрией, и исследуйте богатство истории и культуры
                      Испании, которое выражено в каждом уголке этой удивительной страны.</description>
     <link>
-        <linkhref>page5.html</linkhref>
+        <linkhref>spain.html</linkhref>
     </link>
     <price>$2876</price>
 <text>
@@ -100,7 +101,7 @@
                      гид расскажет вам об истории каждого места и проведет вас через века культуры и природного наследия
                       этой удивительной страны.</description>
     <link>
-        <linkhref>page5.html</linkhref>
+        <linkhref>canada.html</linkhref>
     </link>
     <price>$2100</price>
 <text>
@@ -116,11 +117,10 @@
                        позволит вам ощутить всю магию Мальдивских островов и создаст незабываемые воспоминания на всю 
                        жизнь.</description>
     <link>
-        <linkhref>page5.html</linkhref>
+        <linkhref>maldiv.html</linkhref>
     </link>
     <price>$3846</price>
-</text>
-
+ 
 
 </cataloge>
 

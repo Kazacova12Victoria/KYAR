@@ -6,11 +6,9 @@
   font-family:  sans-serif;
   box-sizing: border-box;
   
+    outline: none;
 }
-/*index-container
-   ogon-agency
-   akc-akcess
-   pers-image*/
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -33,13 +31,10 @@ html {
   }
   
 
-  
   .menu-wrap {
     display: flex;
     width: 100%;
     top: 0;
-    /*height: 100px;
-    position: absolute;*/
     justify-content: space-around;
     background-color: #05556F;
   }
@@ -50,6 +45,7 @@ html {
     align-items: center;
     padding: 140px 0;
     background: url("../photo/фон.jpg");
+    background-size: cover;
   }
   
   .menu-wrap .logo img {
@@ -94,7 +90,7 @@ html {
 }
 
 main.container .first {
-  background-attachment: fixed;/*фоновое изображение остается на месте*/
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;/*фоновое изображение растягивается или сжимается так, чтобы оно полностью покрывало всю видимую область элемента, сохраняя при этом пропорции изображения*/
   width: 100%;
@@ -110,95 +106,6 @@ main.container .first h3 {
   color: #fff;
   font-size: 1.5em;
 }
-/*
-  .description1 {
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    display: grid;
-    
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    width: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 2%;
-    background-color: #05556F;
-    grid-gap: 20px;
-
-  }
-  .description1 img, .description1 .txt {
-    grid-column: 5 span;
-  }
-  .description1 img {
-    width: 90%;
-    margin: 5%;
-  }
-  .description1 .txt h2, .description1 .txt p {
-    color: white;
-    margin-right: 8%;
-  }
-  .description1 .txt h2 {
-    text-align: center;
-  }*/
-
-  /*.description {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
-    padding: 5%;
-    background-color: #05556F;
-    grid-gap: 20px;
-  }
-  
-  .description img, .description .txt {
-    grid-column: 5 span;
-  }
-  
-  .description img {
-    width: 100%;
-  }
-  
-  .description .txt h2, .description .txt p {
-    color: rgb(255, 255, 255);
-    padding: 0 15px;
-  }
-  
-  .description .txt h2 {
-    text-align: center;
-  }
-  a:active{
-    color: #81C0E3;
-  }
-  .link1{
-    text-decoration: none;
-    color: #81C0E3;
-  }
-  .txt a {
-    display: inline-block;
-    color: #81C0E3; 
-    line-height: 1;
-    text-decoration: none; 
-    cursor: pointer;
-  }
-  .txt a:after {
-    background-color: #407d9e; 
-    display: block;
-    content: "";
-    height: 2px; 
-    width: 0%;*/
-   /* -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;*/
-   /* transition: width .3s ease-in-out;
-  }
-  .txt a:hover:after,
-  .txt a:focus:after {
-    width: 100%;
-  }*/
 
   .agency {
     background: url("../photo/фон2.jpg");
@@ -257,11 +164,6 @@ main.container .first h3 {
     padding-top: 20px;
    
   }
-  
-  /*form {
-    display: block;
-    margin-bottom: 200px;
-  }*/
   
   main.container #stol form {
     width: 40%;
@@ -335,7 +237,6 @@ main.container .first h3 {
     }
   }
   
-
   footer {
     width: 100%;
     background-color: #005F7D;
@@ -420,6 +321,60 @@ main.container .first h3 {
   }
 
 
+.about-this-block {
+    padding: 60px;
+}
+/* Title */
+.block__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Container for items */
+.about-this-block .items {
+    display: flex;
+    justify-content: space-between;
+}
+.about-this-block__item{
+max-width: calc(25% - 30px);
+}
+/* Icon styles */
+.about-this-block__item .icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+
+/* Title styles */
+.about-this-block__item .title {
+    margin-bottom: 25px;
+  
+    color: #000;
+   
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Text styles */
+.about-this-block__item .text {
+    font-size: 14px;
+    color: #3e3c3c;
+    line-height: 16px;
+    
+    font-weight: 400;
+    text-align: center;
+}
+
+
   @media all and (max-width: 877px) {
     footer {
       width: 100%;
@@ -455,8 +410,17 @@ main.container .first h3 {
       padding: 10px 0;
       font-size: 90%;
     }
+
+      .about-this-block {
+        padding: 30px; /* Уменьшаем отступы */
+    }
+    
+
   }
+
+
   @media all and (max-width: 710px) {
+
     footer .half1, footer .half2 {
       grid-column: 3;
       grid-column: 8 span;
@@ -484,13 +448,77 @@ main.container .first h3 {
     footer .half2 {
       width: 100%;
     }
+
+    
   }
+
+
+@media all and (max-width: 530px) {
+  #button{
+    margin-left: -20px;
+  }
+    .about-this-block {
+        padding: 30px; /* Уменьшаем отступы */
+    }
+    
+    /* Уменьшаем размер заголовка */
+    .block__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+        text-align: center; /* Выравниваем заголовок по центру */
+    }
+
+    /* Изменяем расположение блоков для мобильной версии */
+    .about-this-block .items {
+        flex-direction: column; /* Располагаем блоки по вертикали */
+        align-items: center; /* Выравниваем по центру */
+        width: 100%;
+    }
+
+    /* Устанавливаем максимальную ширину для элементов */
+    .about-this-block__item {
+        margin-bottom: 30px; /* Увеличиваем отступ между элементами */
+        text-align: center; /* Выравниваем содержимое по центру */
+        width: 100%; /* Занимаем всю доступную ширину */
+        max-width: none;
+    }
+
+    /* Изменяем стили иконок */
+    .about-this-block__item .icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        margin-top: -20px;
+    }
+
+   .about-this-block__item .text {
+        font-size: 14px;
+        color: #3e3c3c;
+        line-height: 16px;
+        font-weight: 400;
+        text-align: center;
+        overflow: hidden; /* Предотвращаем выход текста за пределы блока */
+        word-wrap: break-word; /* Разрешаем перенос текста на новую строку, если не умещается */
+    }
+    
+}
+
+
+
+
+
+
   @media all and (max-width: 500px) {
     footer .half1, footer .half2 {
       grid-column: 2;
       grid-column: 10 span;
       grid-column: 2/12;
     }
+
+    
   }
   @media all and (max-width: 330px) {
     .first, .txt {
@@ -523,6 +551,15 @@ main.container .first h3 {
     footer {
       width: 100%;
       padding: 0;
+    }
+     .about-this-block__item .text {
+        font-size: 14px;
+        color: #3e3c3c;
+        line-height: 16px;
+        font-weight: 400;
+        text-align: center; /* Выравниваем текст по центру */
+        overflow: hidden; /* Предотвращаем выход текста за пределы блока */
+        word-wrap: break-word; /* Разрешаем перенос текста на новую строку, если не умещается */
     }
   }
   @media all and (max-width: 400px) {
@@ -592,6 +629,15 @@ main.container .first h3 {
     }
   }
   @media all and (max-width: 650px) {
+    
+    
+    .container h2{
+      margin-top: 100px;
+    }
+
+    .container  .txt h2{
+      margin-top: 10px;
+    }
     .toggler {
       display: block;
     }
@@ -609,8 +655,16 @@ main.container .first h3 {
       height: 80px;
       justify-content: inherit;
     }
+
+    .sort{
+      justify-content: center;
+      position: relative;
+      top: 80px;
+      padding-bottom: 20px;
+    }
     .menu-wrap .logo img {
       width: 60px;
+     margin-left: 30px;
     }
     .menu-wrap .toggler {
       position: absolute;
@@ -689,6 +743,7 @@ main.container .first h3 {
       opacity: 1;
       transition: opacity 0.4s ease 0.4s;
     }
+
     .menu-wrap .menu-nav {
       position: fixed;
       top: 0;
@@ -730,7 +785,7 @@ main.container .first h3 {
       display: block;
     }
     .menu-wrap .menu-nav > div > div > ul > li > a {
-      color: #274646;
+      color: #FFF;
       text-decoration: none;
       transition: color 0.4s ease;
     }

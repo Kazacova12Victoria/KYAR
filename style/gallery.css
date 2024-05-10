@@ -1,0 +1,143 @@
+*{
+  font-family: sans-serif;
+}
+.caption {
+    text-align: center;
+    margin: 100px auto;
+    color: white;
+  
+  }
+  .div {
+    margin-left: 50px;
+  }
+  .images {
+    width: 300px;
+    height: 200px;
+  }
+  img.images {
+  
+    transition: 1s;
+   
+  }
+  img.images:hover {
+   
+    transform: scale(1.2);
+  }
+  figure {
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+  }
+
+
+  
+.gallery { 
+  display: flex; 
+  justify-content: center;
+  box-sizing:content-box;
+} 
+.gallery img { 
+  width: 45%; 
+} 
+.captionMod { 
+  margin-top: 30px; 
+  margin-bottom: 20px;
+} 
+.img { 
+  margin: 0 10px; 
+  text-align: center; 
+} 
+ 
+.modal { 
+  position: fixed; 
+  z-index: 1; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.8); 
+} 
+ 
+.modal-content { 
+  display: flex; 
+  margin: 5% auto; 
+  padding: 20px; 
+  width: 60%; 
+} 
+.img img{
+  width: 60%;
+}
+#order-form { 
+  flex: 1; 
+  text-align: center; 
+  margin: 10px 20px 0 20px; 
+} 
+ 
+
+.captionMod{
+      color: #fff;
+    }
+    
+  
+@media (min-width: 601px) and (max-width: 1035px) {
+  .div{
+    margin: 0;
+    padding-left:calc(18% - 10px);
+    width: 90%;
+  }
+  .half2{
+    width: 60%;
+  }
+  .captionMod{
+    color: #fff;
+  }
+  .img img{
+    width: 80%;
+  }
+
+}
+  
+  @media all and (max-width: 600px) {
+    .div {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      align-items: center;
+    }
+    .images {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 80%;
+    }
+    .img img{
+      width: 100%;
+    }
+    .captionMod{
+      color: #fff;
+    }
+    .caption{
+      margin-top: calc(1em + 80px);
+    }
+    .modal-content{
+      width: 100%;
+    }
+    img.images {
+  
+        transform: scale(1);
+       
+      }
+      img.images:hover {
+       
+        transform: scale(1.2);
+      }
+    
+  }

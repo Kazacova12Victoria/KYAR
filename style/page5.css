@@ -1,3 +1,6 @@
+*{
+  font-family: sans-serif;
+}
 .slider {
     margin-top: 15%;
     margin-left: 2%;
@@ -17,11 +20,21 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
-.txt2{
- 
-  margin-left: 2%;
-  margin-right: 2%;
-}
+  .txt2 {
+    color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+  }
+  
+  .txt2 ul {
+    column-count: initial;
+  }
+  
+  .txt2 li {
+    margin-bottom: 20px; 
+  }
+  
 .item {
     display: flex;
     justify-content: center;
@@ -68,7 +81,158 @@ p{
   }
 
 
+  .include-block {
+    background-color: #027a9e; 
+    padding: 55px 60px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+
+.include-block .center {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.block__title {
+   
+    font-weight: 700;
+    font-size: 48px; 
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.include-block ul {
+    list-style: none;
+    column-count: 2;
+    column-gap: 200px;
+}
+
+.include-block ul li {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    color: #fff;
+}
+
+.include-block ul li:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -30px; 
+    width: 20px;
+    height: 20px;
+    background: url('/svg/галочка.svg') no-repeat center; 
+    background-size: contain;
+}
+
+.include-block ul .paid-block:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -30px; 
+  width: 20px;
+  height: 20px;
+  background: url('/svg/крестик.svg') no-repeat center; 
+  background-size: contain;
+}
+
+.paid-block {
+    margin-bottom: 15px; 
+}
+
+.paid {
+    padding: 0px 10px;
+    background: #fc2865;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    min-width: 54px;
+    height: 20px;
+    line-height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+
+
+
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.important-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.important-block__item {
+  width: calc(33.33333333% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 10px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.inner {
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+@media screen and (max-width: 1025px){
+.slider .item img {
+      margin-left: auto;
+      margin-right: auto;
+        height: 100%;
+        padding: 10px;
+        margin-top: 80px;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 710px) {
+  .txt2 ul{
+    padding-left: 15px;
+  }
   .item {
         flex-direction: column;
        
@@ -86,8 +250,9 @@ p{
   .slider .item img {
       margin-left: auto;
       margin-right: auto;
-        height: 300px;
+        height: 100%;
         padding: 10px;
+        margin-top: 80px;
     }
   .previous, .next {
         display: none;
@@ -102,5 +267,46 @@ p{
         transition: 0.5s;
         color: white;
     }
+
+     .include-block .center {
+        max-width: 90%; /* Уменьшаем ширину центрированного контейнера */
+        margin: 0 auto;
+    }
+
+    .block__title {
+        font-size: 36px; /* Уменьшаем размер заголовка */
+        text-align: center; /* Выравниваем заголовок по центру */
+    }
+
+    .include-block ul {
+        column-count: 1; /* Отменяем разбиение на колонки */
+        column-gap: initial; /* Сбрасываем расстояние между колонками */
+    }
+
+    li {
+        margin-bottom: 15px; /* Уменьшаем расстояние между элементами списка */
+    }
+
+    .include-block ul li:before {
+        left: -25px; /* Смещаем маркеры влево для лучшего выравнивания */
+    }
+
+    .paid-block {
+        margin-bottom: 10px; /* Уменьшаем расстояние между пунктами с классом paid-block */
+    }
+    .include-block ul li:nth-child(4) {
+      margin-bottom: 60px; /* Добавляем отступ после "Фотоотчет" */
+  }
+
+
+  .important-block__item {
+    width: 100%; /* Устанавливаем ширину блока на 100%, чтобы он занимал всю доступную ширину экрана */
+    margin-bottom: 20px; /* Добавляем отступ между блоками */
+}
+
+.button{
+  margin-right: 500px;
+}
+
   }
   

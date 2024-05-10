@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="shortcut icon" href="svg/logo.svg" type="image/x-icon">
+    <title>Journey</title>
+</head>
+<body class="container">
+    <header class="menu-wrap">
+        <div class="logo">
+            <a href="main.html"><img src="svg/logo.svg" alt="Travel agency"></a>
+        </div>
+       
+        <input class="toggler" id="eCheck" type="checkbox">
+        
+        <div class="hamburger">
+            <div>
+            </div>
+        </div>
+
+        <nav class="menu-nav">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="company.html">О нас</a></li>
+                        <li><a href="tours.html">Туры</a></li>
+                        <li><a href="gallery.html" >Галерея</a></li>
+                        <li><a href="#cont">Контакты</a></li>
+                         <li><a href="order.html">Заявка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="caption">Фотографии с наших туров</h1>
+    <div class="div">
+    <p>
+    <figure>
+        <img class = "images" src="photo/галерея/photo1.jpg" alt="" onclick="showOrderForm('photo/галерея/photo1.jpg', 0 , 'Египет',  'Пирамида Хеопса, величественное сооружение в Гизе, является одним из самых известных архитектурных достижений Древнего Египта. Строительство этой пирамиды началось примерно в 2580 году до н.э. и продолжалось около 20 лет, при участии тысяч рабочих.')">
+        <div class="modalnum"> 
+        </div>
+        <!-- <div class="modal" id="order-modal"> 
+            <div class="modal-content">
+                <div class="gallery">          
+                    <div class="img"> 
+                      <img src="/photo/company2.jpg" alt="Image 3"> 
+                      <div class="caption"> 
+                        <p>Заголовок</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum magni et dolorem labore maxime quo ut consequatur perspiciatis voluptatum corrupti quas veritatis, inventore sit molestiae aliquam quidem, alias architecto ullam aut voluptas quia rerum quisquam enim. Odit in beatae eius accusantium, doloribus deleniti quae nisi atque excepturi culpa quibusdam.</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div> -->
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/canada5.jpg"  alt="" onclick="showOrderForm('photo/галерея/canada5.jpg', 1 , 'Водопад Хелкем',  'Водопад Хелкем находится в Канаде. Этот потрясающий природный объект впечатляет своими мощными водными потоками, падающими с высоты более 335 метров, делая его одним из самых высоких водопадов в стране.')">
+        <div class="modalnum"> 
+        </div>
+        <!-- <div class="modal" id="order-modal"> 
+            <div class="modal-content">
+                <div class="gallery">          
+                    <div class="img"> 
+                      <img src="photo/.jpg" alt="Image 3"> 
+                      <div class="caption"> 
+                        <p>Заголовок</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum magni et dolorem labore maxime quo ut consequatur perspiciatis voluptatum corrupti quas veritatis, inventore sit molestiae aliquam quidem, alias architecto ullam aut voluptas quia rerum quisquam enim. Odit in beatae eius accusantium, doloribus deleniti quae nisi atque excepturi culpa quibusdam.</p>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div> -->
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/photo13.jpg" alt="" onclick="showOrderForm('photo/галерея/photo13.jpg', 2 , 'Река Нил',  'Река Нил является жизненно важным источником воды для Египта. Она протянулась через пустынные районы, придавая плодородие землям вдоль своего пути благодаря своим ежегодным наводнениям.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/georgia1.jpg" alt="" onclick="showOrderForm('photo/галерея/georgia1.jpg', 3 , 'Улица ковров',  'В Грузии есть знаменитая Улица Ковров, которая находится в старом городе Тбилиси. Это уникальное место, где мастера ручного ткачества предлагают разнообразные ковры различных стилей, размеров и узоров.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+
+<p>
+    <figure>
+        <img class = "images" src="photo/галерея/photo4.jpg"  alt="" onclick="showOrderForm('photo/галерея/photo4.jpg', 4 , 'Река Тирсо',  'Река Тирсо, или Тирренская река, находится на острове Сардиния в Италии. Она является одной из крупнейших рек этого региона. ')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/photo5.jpg"  alt="" onclick="showOrderForm('photo/галерея/photo5.jpg',  5 , 'Холмы Италии',  'Холмы не только предлагают великолепные пейзажи, но и часто являются местом для виноделия и сельского туризма.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/thailand3.jpg"  alt="" onclick="showOrderForm('photo/галерея/thailand3.jpg',  6 , 'Река Прянбури',  'Река Прянбури расположена в южной части Таиланда, примерно в 200 километрах к югу от Бангкока. Эта река протекает через провинцию Прянбури и впадает в залив Сиамский залив. Река является важным источником пресной воды и поддерживает местное сельское хозяйство и экосистему. Вдоль реки также развивается туризм, благодаря своей природной красоте и возможностям для активного отдыха, такого как каякинг и прогулки на лодках.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/photo14.jpg" alt="" onclick="showOrderForm('photo/галерея/photo14.jpg',  7 , 'Улица Спаньи',  'Улица Спаньи славится своими модными бутиками, роскошными магазинами и элегантными кафе. Это место, где можно насладиться атмосферой роскоши и стиля, прогуливаясь по историческим каменным мостовым и наслаждаясь видом на прекрасные архитектурные памятники.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+<p>
+    <figure>
+        <img class = "images" src="photo/галерея/photo7.jpg" alt="" onclick="showOrderForm('photo/галерея/photo7.jpg',  8 , 'Девечья башня',  'Девичья башня - это историческое сооружение, расположенное на небольшом острове в Мраморном море, у подножия европейской стороны Стамбула, в Турции. Башня имеет древние корни и служила различными целями на протяжении своей истории, включая фарватер для судов и укрепление городской обороны. Сегодня она является одним из наиболее узнаваемых символов Стамбула и привлекает туристов своей архитектурой и красивыми видами на город и море.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/spain3.jpg" alt="" onclick="showOrderForm('photo/галерея/spain3.jpg',  9 , 'Сад мандаринов',  'Мандарины Орри - это торговая марка мандаринов, которая производится в районе Кастилия-Ла-Манча в Испании. Этот регион славится своими мандариновыми плантациями и высоким качеством фруктов. Мандарины Орри отличаются сочным вкусом, сладостью и нежной текстурой. Они часто экспортируются в различные страны мира благодаря своей популярности и высокому качеству.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/photo9.jpg" alt="" onclick="showOrderForm('photo/галерея/photo9.jpg',  10 , 'Святая София',  'Святая София - это древний храм, расположенный в Стамбуле, Турция. Он был построен в VI веке по заказу византийского императора Юстиниана I и первоначально был православным собором. Святая София служила одним из величайших центров византийского православия в течение многих столетий.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/maldives3.jpg" alt="" onclick="showOrderForm('photo/галерея/maldives3.jpg',  11 , 'Мальдивы',  'Несмотря на то, что Мальдивы находятся в Индийском океане, а не в Аравийском море, они часто ассоциируются с роскошными курортами и бирюзовыми водами. Мальдивы славятся своими красивыми коралловыми рифами, идеальными для дайвинга и сноркелинга, а также роскошными курортами, где туристы могут наслаждаться расслабленным пляжным отдыхом. ')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</p>
+    <figure>
+        <img class = "images" src="photo/галерея/photo11.jpg"  alt="" onclick="showOrderForm('photo/галерея/photo11.jpg',  12 , 'Бурдж Халифа',  'Бурдж Халифа - самое высокое здание в мире, расположенное в городе Дубай, Объединенные Арабские Эмираты.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/photo10.jpg"  alt="" onclick="showOrderForm('photo/галерея/photo10.jpg',  13 , 'Дубай',  'Дубай - это крупный и современный город в Объединённых Арабских Эмиратах , известный своими высокими небоскребами, роскошными отелями, торговыми центрами и богатством культурных и развлекательных возможностей.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/italy1.jpg" alt="" onclick="showOrderForm('photo/галерея/italy1.jpg',  14 , 'Италия',  'Италия - это страна в Южной Европе, известная своим богатым культурным наследием, историей, великолепной кухней и прекрасными пейзажами. Она расположена на Апеннинском полуострове и омывается Средиземным морем. В Италии можно найти множество исторических городов, таких как Рим, Флоренция, Венеция и Милан, где сохранились архитектурные шедевры, великие музеи и произведения искусства. Кроме того, Италия славится своими культурными традициями, виноделием, модой и кулинарией, включая пиццу, пасту и гельато.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+
+    <figure>
+        <img class = "images" src="photo/галерея/photo12.jpg" alt="" onclick="showOrderForm('photo/галерея/photo12.jpg',  15 , 'Бурдж Аль Араб',  'Бурдж Аль Араб - это символ роскоши и иконический небоскреб в Дубае, Объединенные Арабские Эмираты. Он является одним из самых известных зданий в мире благодаря своей уникальной форме, которая напоминает парус корабля. Бурдж Аль Араб является одним из самых высоких отелей в мире и предлагает своим гостям высочайший уровень роскоши и комфорта. Он расположен на искусственном острове, соединенном с материком мостом. Этот символ Дубая привлекает туристов со всего мира своими величественными видами, роскошными номерами, ресторанами мирового класса и высококлассными услугами.')">
+        <div class="modalnum"> 
+        </div>
+    </figure>
+</div>
+
+<footer id="cont">
+    <h1 class="all">Следите за нами </h1>
+    <div class="cont">
+        <h2>Journey</h2><br>
+        <a href="https://www.instagram.com/kaz_viktoria?igsh=MTBsaDM3djlhdWFoZQ==">
+            <img src="png/insta.png" /></a>
+        <p>г.Пинск,Площадь Ленина 28<br>+375 44 665-18-41</p>
+            
+    </div>
+    <div class="cont">
+        <h2>Journey</h2><br>
+       <a href="https://www.instagram.com/kaz_viktoria?igsh=MTBsaDM3djlhdWFoZQ==">
+                <img src="png/facebook.png" /></a>
+        <p>г.Минск ,ул.Щорса 9<br>+375 29 888-67-23</p>
+            
+    </div>
+    <div class="cont">
+        <h2>Journey</h2><br>
+        <a href="https://www.instagram.com/kaz_viktoria?igsh=MTBsaDM3djlhdWFoZQ==">
+            <img src="png/twitter.png" /></a>
+        <p>г. Минск,ул. Бобруйская 25 <br>+375 33 982-12-01</p>
+    </div>
+
+    <div class="half1">
+        <iframe src="https://yandex.by/map-widget/v1/?indoorLevel=1&ll=27.558022%2C53.889831&mode=whatshere&whatshere%5Bpoint%5D=27.557963%2C53.889792&whatshere%5Bzoom%5D=16.71&z=16.71" width="260" height="200" frameborder="1" allowfullscreen="true" ></iframe>
+               </div><br>
+
+               <div class="half2">
+                   <p>Наш адрес: г.Пинск,Площадь Ленина 28<br>Звоните по номеру: +375 44 665-18-41</p>
+                   <p>Наш адрес: г.Минск ,ул.Щорса 9<br>Звоните по номеру: +375 29 888-67-23</p>
+                   <p>Наш адрес: г. Минск,ул. Бобруйская 25<br>Звоните по номеру: +375 33 982-12-01</p>
+                   <p>Мы открыты ежедневно с 9:00 до 20:00</p>
+               </div>
+               
+    
+</footer>
+    
+</body>
+<script src="js/forGallery.js"></script>
+</html>
